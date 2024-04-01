@@ -23,5 +23,8 @@ describe("FormatFullname", () => {
     expect(formatFullname("john doe")).to.equal("John Doe");
     expect(formatFullname("JoHn DOE")).to.equal("John Doe");
     expect(formatFullname("joHN dOe")).to.equal("John Doe");
+    expect(formatFullname("amanda doe")).to.equal("Amanda Doe");
+    expect(formatFullname("AMANDA DOE")).to.equal("Amanda Doe");
+    expect(formatFullname("aMaNdA dOe")).to.equal("Amanda Doe");
   });
 });
